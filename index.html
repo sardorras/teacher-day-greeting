@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>С Днём учителя!</title>
+    <meta
+      name="description"
+      content="Праздничное поздравление ко Дню учителя для учителей русского языка и литературы."
+    />
+    <meta property="og:title" content="С Днём учителя!" />
+    <meta
+      property="og:description"
+      content="Спасибо за слова, которые остаются с нами навсегда."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
+    />
+    <meta property="og:url" content="https://example.github.io/teacher-day-greeting/" />
+    <meta name="theme-color" content="#1B1A17" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Lora:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="floating-letters" aria-hidden="true"></div>
+
+    <div class="page-progress" aria-hidden="true">
+      <span class="progress-line"></span>
+      <span class="progress-dot"></span>
+    </div>
+
+    <button
+      class="music-toggle"
+      type="button"
+      aria-label="Включить фоновую музыку"
+      aria-pressed="false"
+    >
+      <span class="music-icon">♫</span>
+      <span class="music-label">Музыка</span>
+    </button>
+
+    <div class="book-intro" id="bookIntro" aria-live="polite">
+      <div class="book-cover">
+        <div class="book-spine"></div>
+        <div class="book-body">
+          <div class="book-front">
+            <span class="book-title">Спасибо</span>
+            <span class="book-subtitle">за слова</span>
+          </div>
+          <div class="book-back"></div>
+        </div>
+      </div>
+      <button class="book-open-button" type="button">Открыть книгу</button>
+    </div>
+
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container">
+          <p class="kicker">Дорогой учитель</p>
+        </div>
+      </header>
+
+      <main id="main-content">
+        <section class="hero reveal" aria-labelledby="hero-title">
+          <div class="container hero-grid">
+            <div class="hero-copy">
+              <p class="eyebrow">Слово — это поступок</p>
+              <h1 id="hero-title" class="title-handwritten">С Днём учителя!</h1>
+              <p class="subtitle">
+                Спасибо за слова, которые остаются с нами навсегда.
+              </p>
+              <div class="hero-actions">
+                <a href="#quotes" class="button primary">Читать дальше</a>
+                <button type="button" class="button ghost scroll-to-next" data-target="#quotes">
+                  Вниз
+                </button>
+              </div>
+            </div>
+
+            <div class="hero-ornament" aria-hidden="true">
+              <div class="ink-circle"></div>
+              <div class="hero-quote-card">
+                <span>«В слове — не только смысл, но и тепло.»</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="#quotes" class="scroll-cue" aria-label="Прокрутить вниз">
+            <span>↓</span>
+          </a>
+        </section>
+
+        <section id="quotes" class="quotes reveal" aria-labelledby="quotes-title">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Слово и язык</p>
+              <h2 id="quotes-title">Письмо, которое учит нас слышать себя</h2>
+            </div>
+
+            <div class="quote-slider" aria-live="polite">
+              <button class="slider-nav prev" type="button" aria-label="Предыдущая цитата">←</button>
+              <div class="quote-stage">
+                <article class="quote-card active">
+                  <p class="quote-text">«Вдохновение нужно в геометрии, как и в поэзии.»</p>
+                  <p class="quote-author">А. С. Пушкин</p>
+                </article>
+                <article class="quote-card">
+                  <p class="quote-text">
+                    «Умение видеть и умение говорить — это начало культуры человека.»
+                  </p>
+                  <p class="quote-author">Авторский текст</p>
+                </article>
+                <article class="quote-card">
+                  <p class="quote-text">
+                    «Слова не просто обозначают мир, они помогают его понимать, переживать и беречь.»
+                  </p>
+                  <p class="quote-author">Авторский текст</p>
+                </article>
+                <article class="quote-card">
+                  <p class="quote-text">
+                    «Не бойтесь слова, которое делает человека внимательнее к себе и к другим.»
+                  </p>
+                  <p class="quote-author">Авторский текст</p>
+                </article>
+                <article class="quote-card">
+                  <p class="quote-text">
+                    «Хороший учитель учит не только предмету, но и способу думать.»
+                  </p>
+                  <p class="quote-author">Авторский текст</p>
+                </article>
+              </div>
+              <button class="slider-nav next" type="button" aria-label="Следующая цитата">→</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="dictionary reveal" aria-labelledby="dictionary-title">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Словарь благодарности</p>
+              <h2 id="dictionary-title">Слова, которые мы перенимаем из ваших уроков</h2>
+            </div>
+
+            <div class="dictionary-grid">
+              <button class="word-card active" type="button" data-word="терпение">
+                <span class="word-title">терпение</span>
+                <span class="word-preview">открывает пространство для роста</span>
+              </button>
+              <button class="word-card" type="button" data-word="мудрость">
+                <span class="word-title">мудрость</span>
+                <span class="word-preview">слушать глубже, чем слышно</span>
+              </button>
+              <button class="word-card" type="button" data-word="вдохновение">
+                <span class="word-title">вдохновение</span>
+                <span class="word-preview">помогает заметить свет</span>
+              </button>
+              <button class="word-card" type="button" data-word="строгость">
+                <span class="word-title">строгость</span>
+                <span class="word-preview">не наказание, а уважение</span>
+              </button>
+              <button class="word-card" type="button" data-word="доброта">
+                <span class="word-title">доброта</span>
+                <span class="word-preview">лучше всего слышится в поступках</span>
+              </button>
+            </div>
+
+            <article class="dictionary-article" aria-live="polite">
+              <p class="article-label">Толкование</p>
+              <h3 id="dictionary-word">Терпение</h3>
+              <p id="dictionary-text">
+                Терпение — это не пассивное ожидание, а способность длительно и внимательно
+                расти в слове, мысли и характере. Именно оно делает учителя сильным и
+                человечным: он не спешит сдаваться ни в детях, ни в себе.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="quiz reveal" aria-labelledby="quiz-title">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Мини-игра</p>
+              <h2 id="quiz-title">Угадай классика</h2>
+            </div>
+
+            <div class="quiz-panel" aria-live="polite">
+              <div class="quiz-progress" id="quizProgress">Вопрос 1/5</div>
+              <h3 id="quizQuestion" class="quiz-question">
+                Кто написал строки: «Вдохновение нужно в геометрии, как и в поэзии»?
+              </h3>
+
+              <div class="quiz-options" id="quizOptions" role="list"></div>
+
+              <div class="quiz-feedback" id="quizFeedback" aria-live="polite"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="typo reveal" aria-labelledby="typo-title">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Орфографический сюрприз</p>
+              <h2 id="typo-title">Найдите и исправьте ошибку в поздравлении</h2>
+            </div>
+
+            <div class="typo-card">
+              <p class="typo-text">
+                Дорогой учитель, <span class="typo-word wrong" data-correct="вас">вас</span> благодарим за
+                терпение, за любовь к слову и за тот жаркий ум, который
+                <span class="typo-word wrong" data-correct="учит">учит</span> видеть
+                красоту в простом. Вы
+                <span class="typo-word wrong" data-correct="делаете">делаете</span>
+                нас внимательнее к фразе, к мысли, к людям. Ваша
+                <span class="typo-word wrong" data-correct="работа">робота</span>
+                — это не только предмет, но и
+                <span class="typo-word wrong" data-correct="воспитание">воспитание</span>
+                души.
+              </p>
+              <button class="button primary typo-check" type="button">Проверить текст</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="wishes reveal" aria-labelledby="wishes-title">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Пожелания</p>
+              <h2 id="wishes-title">Стена благодарности</h2>
+            </div>
+
+            <form class="wish-form" id="wishForm">
+              <label>
+                <span>Имя</span>
+                <input type="text" id="wishName" maxlength="30" placeholder="Ваше имя" aria-label="Ваше имя" required />
+              </label>
+              <label>
+                <span>Пожелание</span>
+                <textarea id="wishText" maxlength="180" rows="4" placeholder="Напишите тёплое пожелание..." aria-label="Пожелание" required></textarea>
+              </label>
+              <button class="button primary" type="submit">Отправить письмо</button>
+            </form>
+
+            <div class="wishes-wall" id="wishesWall" aria-live="polite"></div>
+          </div>
+        </section>
+
+        <section class="final reveal" aria-labelledby="final-title">
+          <div class="container final-wrap">
+            <div class="final-copy">
+              <p class="eyebrow">Спасибо</p>
+              <h2 id="final-title">Спасибо, что научили нас думать, чувствовать и говорить</h2>
+            </div>
+            <button type="button" class="button primary final-button" id="celebrateButton">
+              Сказать спасибо
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <canvas id="leafCanvas" aria-hidden="true"></canvas>
+  </body>
+</html>
+
